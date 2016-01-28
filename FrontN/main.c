@@ -11,22 +11,10 @@
 int choose_nth(int a[],int startIndex, int endIndex, int n);
 int main(int argc, const char * argv[]) {
 
-
     int a[] = {150,111,1000,99,300,10,189};
-    int n,i;
-    int an = sizeof(a)/sizeof(int);
 
-    printf("数组:\n");
-    for(i = 0 ; i < an; ++i)
-        printf("%d ",a[i]);
-    printf("\n");
-
-    printf("想找第几大的数:");
-    scanf("%d",&n);
-
-    int ans = choose_nth(a, 0, an - 1, n);
-    printf("第%d大的数是:%d\n", n, ans);
-
+    int ans = choose_nth(a, 0, 6, 2);
+    printf("第2大的数是:%d\n", ans);
 
     return 0;
 }

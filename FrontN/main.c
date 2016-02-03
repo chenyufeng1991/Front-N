@@ -13,8 +13,8 @@ int main(int argc, const char * argv[]) {
 
     int a[] = {150,111,1000,99,300,10,189};
 
-    int ans = choose_nth(a, 0, 6, 6);
-    printf("第2大的数是:%d\n", ans);
+    int ans = choose_nth(a, 0, 6, 1);
+    printf("第1大的数是:%d\n", ans);
 
     return 0;
 }
